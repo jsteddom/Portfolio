@@ -9,3 +9,27 @@ git add [File name] - save file
 git add . - save everything
 
 git commit -m '[message]' - commit changes and add a message
+
+git log - shows saves
+
+git checkout 'hash code' - pull up specific commit
+
+git remote add origin [GitHub Repository link] - link to GitHub
+
+git push -u origin 
+
+
+---------
+
+/Users/jonathansteddom/.ssh/id_ed25519
+Ssh key stored
+
+The key fingerprint is:
+SHA256:0fXN2WK0EiPZfyKmMpt0jPN1sMsQVExSBINbKYEftrc jsteddom@asu.edu
+
+---------
+
+
+
+When in Vim:
+	:qa [Enter] - close file
