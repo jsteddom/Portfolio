@@ -1,0 +1,11 @@
+mkdir [Name] - make new directory 
+
+cd [Folder name] - change directory
+
+touch [File name].[File type] - Create file
+
+git add [File name] - save file
+
+git add . - save everything
+
+git commit -m '[message]' - commit changes and add a message
