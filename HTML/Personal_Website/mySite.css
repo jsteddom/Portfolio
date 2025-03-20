@@ -6,6 +6,7 @@ h1 {
     width: fit-content;
 }
 h2 {
+    text-align: center;
     font-family: "Poppins", sans-serif;
     background-color: #b19f9e;
     box-shadow: 0.1em 0.1em black;
@@ -13,7 +14,13 @@ h2 {
     border-radius: 15px;
     width: fit-content;
 }
+h3 {
+    font-size: 120%;
+    font-family: "Poppins", sans-serif;
+
+}
 #center {
+    display: flex;
     justify-content: center;
 }
 
@@ -69,9 +76,6 @@ body {
     justify-content: space-between;
     background-color: #2E2E2E;
 }
-p {
-    color:aliceblue;
-}
 
 #container { 
     padding: 10px 10px 10px 10px;
@@ -108,19 +112,18 @@ p {
     filter: grayscale(100%);
 }
 
-
-
 #languagebox {
-    width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: white;
-    gap: 10px;
+    background-color: #2E2E2E;
+    color: aliceblue;
+    fill: white;
+    gap: 16px;
 }
 .langsize {
     width: 128px;
-    height: 128px;
+    height: 128x;
     object-fit: cover;
 }
 
@@ -133,6 +136,30 @@ p {
 .codeimg:hover {
     filter: none;
 }
+
+#resumeContainer {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    gap: 10px;
+}
+#resumeSection {
+    flex: 1;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff7300;
+    font-family: "Poppins", sans-serif;
+    color: #2E2E2E;
+    border-radius: 16px;
+}
+#resumeSectionTwo {
+    flex: 1;
+    padding: 10px 10px 10px 10px;
+    background-color: #EAE0D5;
+    font-family: "Poppins", sans-serif;
+    color: #2E2E2E;
+    border-radius: 16px;
+}
+
 /*
 0015ff blue
 ff00a1 pink 
