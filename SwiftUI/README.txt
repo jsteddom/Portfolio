@@ -1,4 +1,4 @@
-This section of my portfolio is my work using SwiftUI in Xocde (Mac)
+This section of my portfolio is my work using SwiftUI in Xcode (Mac)
 
 This folder will be divided into two categories: Projects and Exercises & Demos
 
@@ -9,6 +9,6 @@ Projects:
 
 Exercise & Demos:
 	This will consist of smaller Xcode projects/files. Some of theses will 
-	be small exercise similar class assingments and some 'demo' projects
+	be small exercises, similar class assignments and some 'demo' projects
 	whose purpose is to learn/develop certain features/functionalities
-	in an issoldated file for future reference.
+	in an isolated file for future reference.
