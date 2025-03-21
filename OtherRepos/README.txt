@@ -1,0 +1,1 @@
+In this folder, there will be a text file containing projects I have worked on with other class mates that are on other repos
