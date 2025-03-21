@@ -1,0 +1,219 @@
+* { box-sizing: border-box; }
+
+body { 
+	background-color: #C4C5BA ; 
+	color: #555555; 
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#wrapper{
+	background-color: #595f39; 
+	
+}
+
+header {
+	background-color: #C4C5BA ; 
+	color: #FFFFFF; 
+	text-align: center; 
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a:link {
+	color: #FFFFFF; 
+}
+header a:visited {
+	color: #FFFFFF; 
+}
+header a:hover {
+	color: #1B1B1B; 
+}
+
+h1 { 
+	margin-bottom: 0; 
+	margin-top: 0;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	letter-spacing: 0.25em;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+nav {
+	text-align: center;
+	font-weight: bold; 
+	padding: 0; 
+	font-size: 120%; 
+}
+nav li {
+	border-bottom: 1px solid #000033;	
+}
+nav ul {
+	list-style-type: none;
+	margin: 0px; 
+	padding-left: 0em; 
+	font-size: 1.2em; 
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:link {
+	color: #1B1B1B; 
+}
+nav a:visited {
+	color: #C4C5BA ;
+}
+nav a:hover {
+	color: #8c2200 ;
+}
+
+main {
+	background-color: #C4C5BA; 
+	padding: 1px 20px 20px 20px;
+	display: block; 
+	overflow: auto;
+}
+
+
+h2 {
+	color: #1B1B1B; 
+	font-family: Georgia, Times New Roman, serif; 
+	text-shadow: 1px 1px 1px #CCCCCC;
+	text-align: center;
+}
+
+	
+h3 {
+	font-family: Georgia, Times New Roman, serif; 
+	color: #000033
+}
+
+main ul { 
+	list-style-image : url(marker.gif); 
+}
+
+dt {
+	color: #002171;
+}
+
+footer {
+	font-size: 75%;
+	text-align: center;
+	font-style: italic;
+	padding: 2em;
+	font-family: Georgia, Times New Roman, serif;
+	background-color: #FFFFFF;
+}
+.EFT{
+	color: #1B1B1B; 
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+#contact{font-size: .90em;}
+
+body { font-family: Arial, Helvetica, sans-serif; }
+
+#Tarkov { 
+	height: 300px;
+	background-image: url(eft.jpg);
+	background-size: 100% 100%; 
+	background-repeat: no-repeat; 
+	}
+
+video { 
+	width: 100%; 
+	height: auto; 
+	max-width: 1280px; 
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+.paragraphTrader {
+	text-align: center;
+	font-style: bold; 
+	font-size: 1.2em;
+}
+
+.TraderTable {
+	font-size: 1.5em;
+}
+.quests{
+	font-size: 1.2em;
+}
+.biggerFont {
+	font-size: 1.2em;
+}
+
+@media (min-width: 600px) {
+	nav ul {
+		display: flex; 
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+	
+	nav li {
+		border-bottom: none;
+	}
+	section {
+		margin-left: 2em;
+		margin-right: 2em;
+		flex: 1;
+	}
+	.flow {
+		display: flex;
+		flex-direction: row;
+
+	}
+}
+
+
+
+@media (min-width: 1024px){
+	#wrapper {
+		margin: auto;
+		width: 80%;
+		border: 1px solid #1B1B1B;
+		box-shadow: 3px 3px 3px #1B1B1B;
+	}
+
+	nav {
+	text-align: left;
+	padding-left: 1em;	
+	}
+	@supports (display: grid) {
+		nav ul{
+			flex-direction: column;
+			padding-top: 1em;
+		}
+		.hero{
+			grid-area: hero;
+		}
+		header {
+			grid-area: header;
+		}
+		main {
+			grid-area: main;
+		}
+		footer {
+			grid-area: footer;
+		}
+		#wrapper{
+			display: grid;
+			grid-template: 
+							"header header"
+							"nav hero"
+							"nav main"
+							"nav footer"
+							/ 180px 1fr;
+
+		}
+	}
+}
