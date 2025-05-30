@@ -76,7 +76,7 @@ struct HomeView: View {
                             }, label: {
                                 Image(systemName: "arrow.left.square.fill")
                             }
-                        )}
+                            )}
                     }
                 }
                 .toolbar {
@@ -84,8 +84,8 @@ struct HomeView: View {
                         HStack {
                             // Add button
                             Button(action:
-                            {
-                              toAddView.toggle()
+                                    {
+                                toAddView.toggle()
                             },  label: {
                                 Image(systemName:"plus.app")
                             }).sheet(isPresented: $toAddView) {
@@ -155,7 +155,8 @@ struct HomeView: View {
                 }, message: {
                     Text("Are you sure you want to sign out?")
                 }
-            )}
+                )
+            }
         }.navigationBarBackButtonHidden(true)
     }
 }

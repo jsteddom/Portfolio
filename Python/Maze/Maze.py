@@ -66,7 +66,11 @@ def Navigation(map, input, node):
             print("INVALID MOVEMENT")
             print("\n--------------------\n")
             return node
-
+    else: 
+        print("--------------------\n")
+        print("INVALID COMMAND")
+        print("\n--------------------\n")
+        return node
 def DisplayMap(map):
     # Print array
     for i in range(rows):
