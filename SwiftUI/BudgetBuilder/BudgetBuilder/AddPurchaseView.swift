@@ -18,7 +18,7 @@ struct AddPurchaseView: View {
     @State var purchaseName: String = ""
     @State var purchaseAmount: String = ""
     @State var purchaseDate: Date = Date()
-    @State var purchaseCategory: [String] = ["Food", "Entertainment", "Clothing", "Investment", "Micro-transactions", "Education", "Miscellaneous", "Refund/Return", "Balance Adjustment"]
+    @State var purchaseCategory: [String] = ["Food", "Entertainment", "Clothing", "Investment", "Education", "Miscellaneous", "Refund/Return", "Balance Adjustment"]
     @State var selectedCategory: String = ""
     @State var purchaseDescription: String = ""
     // Colors
@@ -40,7 +40,15 @@ struct AddPurchaseView: View {
                     Form {
                         Section("Purchase Details") {
                             TextField("Purchase Title", text: $purchaseName)
+                                .onSubmit {
+                                        // Dismiss the keyboard
+                                        UIApplication.shared.sendAction(
+                                            #selector(UIResponder.resignFirstResponder),
+                                            to: nil, from: nil, for: nil
+                                        )
+                                    }
                             TextField("Purchase Amount", text: $purchaseAmount)
+                                .keyboardType(.decimalPad)
                             DatePicker("Purchase date", selection: $purchaseDate, displayedComponents: .date)
                             Picker("Category", selection: $selectedCategory){
                                 ForEach(purchaseCategory, id: \.self){ option in
@@ -58,6 +66,8 @@ struct AddPurchaseView: View {
                                 .padding(2)
                                 .cornerRadius(8)
                                 .font(.system(size: 14))
+                                .onSubmit { UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder),
+                                            to: nil, from: nil, for: nil )}
                         }
                         .listRowBackground(Color(UIColor(red: 0x1F/255, green: 0x22/255, blue: 0x27/255, alpha: 1)))
                         .foregroundStyle(Color(UIColor(red: 0xE6/255, green: 0xE6/255, blue: 0xE5/255, alpha: 1)))

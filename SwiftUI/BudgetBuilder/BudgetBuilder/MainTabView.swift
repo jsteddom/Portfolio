@@ -29,6 +29,10 @@ struct MainTabView: View {
                     .tabItem {
                         Label("Purchases", systemImage: "note.text")
                     }
+                GraphView()
+                    .tabItem {
+                        Label("Numbers", systemImage: "chart.pie.fill")
+                    }
                 
                 ProfileView()
                     .tabItem {
